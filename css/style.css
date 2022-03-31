@@ -1,0 +1,136 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body{
+    background-color: #202124;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+img{
+    width: 100%;
+    }
+.header{
+    display: flex;
+    justify-content: flex-end;
+    height: 60px;
+
+}
+.header__text,
+.header__img,
+.header__imgProfile{
+    margin: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+.header__text{
+    color: #fff;
+}
+.header__img{
+    height: 2rem;
+    width: 2rem;
+}
+.header__imgProfile{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 1000%;
+    background-color: #fff;
+}
+.content{
+    height: 81vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    width: 250px;
+    height: 125px;
+}
+.busqueda{
+    width: 500px;
+}
+@media (max-width: 530px){
+    .busqueda{
+        width: 90%;
+    }
+}
+#gSearch{
+    background-color: transparent;
+    border: solid .1rem gray;
+    width: 100%;
+    height: 40px;
+    border-radius: 3rem;
+}
+.btn{
+    background-color: transparent;
+    border: .1rem solid rgb(58, 58, 58);
+    color: #fff;
+    padding: .8rem;
+    margin: 1rem 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    
+}
+footer{
+    background-color: black;
+    display: fixed;
+    bottom: 0;
+}
+.footerpais{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: #fff;
+    color: rgb(185, 185, 185);
+    padding: 1.5rem;
+}
+.btn:hover{
+    border: .1rem solid gray;
+}
+.listas{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: rgb(185, 185, 185);
+    font-size: 2rem;
+    border-top: solid .1rem rgba(212, 212, 212, 0.493);
+}
+
+.sobreNo ul{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: .5rem;
+}
+.sobreNo ul li{
+    margin: .5rem 1rem; 
+    list-style: none;
+}
+
+.privacidad{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    color: rgb(185, 185, 185);
+    font-size: 2rem;
+}
+.privacidad ul{
+    display: flex;
+    padding: .5rem;
+}
+.privacidad ul li{
+    margin: 1rem;
+    list-style: none;
+}   
+
+@media (max-width: 480px){
+    .listas{
+        grid-template-columns: 100%;
+    }
+    .privacidad{
+        justify-content: center;
+    }
+    .sobreNo ul{
+        justify-content: center;
+    }
+}
